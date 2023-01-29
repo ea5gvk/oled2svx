@@ -6,7 +6,7 @@ After=multi-user.target svxlink.service
 Type=idle
 ExecStart=/usr/bin/python3 /opt/oled/oled2svx.py
 WorkingDirectory=/opt/oled
-User=pi
+User=root
 
 [Install]
 WantedBy=multi-user.target
