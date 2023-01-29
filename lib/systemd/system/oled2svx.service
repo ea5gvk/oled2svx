@@ -1,0 +1,12 @@
+[Unit]
+Description=OLED display SVXLink info
+After=multi-user.target svxlink.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /opt/oled/oled2svx.py
+WorkingDirectory=/opt/oled
+User=pi
+
+[Install]
+WantedBy=multi-user.target
