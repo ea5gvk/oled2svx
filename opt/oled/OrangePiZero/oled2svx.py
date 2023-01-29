@@ -25,7 +25,7 @@ disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 disp.contrast(5)
 #
 # time out for screen saver
-screen_saver=100
+screen_saver=300
 
 
 # Clear display.
