@@ -88,6 +88,11 @@ def get_ip():
     IP = subprocess.check_output(cmd, shell = True ).decode("utf-8")
     return "IP:  " + str(IP).rstrip("\r\n")+" "
 
+def get_ip1():
+    cmd = "hostname -I | awk '{print $2}'"
+    IP = subprocess.check_output(cmd, shell = True ).decode("utf-8")
+    return "IP:  " + str(IP).rstrip("\r\n")+" "
+
 def get_temp():
     # get cpu temperature
     try:
@@ -154,7 +159,11 @@ while True:
 
       msg = get_ip()
       w,h = draw.textsize(msg,font=font12)
-      draw.text(((W-w)/2, top+16),  msg, font=font12, fill=255)
+      draw.text(((W-w)/2, top+12),  msg, font=font12, fill=255)
+    
+      msg = get_ip1()
+      w,h = draw.textsize(msg,font=font12)
+      draw.text(((W-w)/2, top+22),  msg, font=font12, fill=255)
 
     # Screen saver
     if time_show=="1" and check_svx[0]=="" and count>screen_saver:
