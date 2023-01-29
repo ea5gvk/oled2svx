@@ -34,8 +34,8 @@ disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 # Contrast OLED values 1 -255
 disp.contrast(5)
 #
-# time out for screen saver
-screen_saver=10
+# time out for screen saver  // Configuracion de tiempo de espera hasta que se pone el Screen Saver
+screen_saver=300
 
 
 # Clear display.
@@ -107,7 +107,7 @@ def get_cpuL():
 
 # Define text and get total width.
 text = (
-    "SVXReflector PL"
+    "TETRA-EA.DUCKDNS.ORG"
 )
 maxwidth, unused = draw.textsize(text, font=font)
 
