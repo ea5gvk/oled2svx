@@ -24,8 +24,8 @@ disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 # Contrast OLED values 1 -255
 disp.contrast(5)
 #
-# time out for screen saver
-screen_saver=10
+# time out for screen saver   // Configuracion de tiempo de espera hasta que se pone el Screen Saver
+screen_saver=300
 
 
 # Clear display.
@@ -97,7 +97,7 @@ def get_cpuL():
 
 # Define text and get total width.
 text = (
-    "SVXRelector PL"
+    "TETRA-EA.DUCKDNS.ORG"
 )
 maxwidth, unused = draw.textsize(text, font=font)
 
@@ -147,7 +147,7 @@ while True:
       draw.text(((W-w)/2, top+16),  msg, font=font12, fill=255)
 
     # Screen saver
-    if time_show=="1" and check_svx[0]=="" and count>screen_saver and flase :
+    if time_show=="1" and check_svx[0]=="" and count>screen_saver:
       draw.rectangle((0, 0, width, height), outline=0, fill=0)
       xx = pos
       for i, c in enumerate(text):
