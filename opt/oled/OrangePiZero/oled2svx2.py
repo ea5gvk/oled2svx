@@ -34,7 +34,7 @@ disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 # Contrast OLED values 1 -255
 disp.contrast(5)
 #
-# time out for screen saver
+# time out for screen saver  // Configuracion de tiempo de espera hasta que se pone el Screen Saver
 screen_saver=300
 
 
