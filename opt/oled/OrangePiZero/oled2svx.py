@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# SP2ONG 2022 oled2svx
+# SP2ONG 2022 & modified by EA5GVK and thanks to Daniel SP0DZ - oled2svx
 
 import time
 from datetime import datetime
