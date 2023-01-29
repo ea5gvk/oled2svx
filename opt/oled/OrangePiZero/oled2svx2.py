@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# SP2ONG 2022 oled2svx
+# SP2ONG 2022 & modified by EA5GVK and thanks to Daniel SP0DZ - oled2svx
 
 import time
 from datetime import datetime
@@ -35,7 +35,7 @@ disp = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
 disp.contrast(5)
 #
 # time out for screen saver
-screen_saver=10
+screen_saver=300
 
 
 # Clear display.
